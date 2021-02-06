@@ -1,0 +1,48 @@
+version: '3.4'
+
+services:
+  catalog-db:
+    container_name: catalog-db
+    restart: always
+    volumes:
+        - ./data:/data/db
+    ports:
+        - "25000:2701"
+  basket-db:
+    container_name: basket_db
+    restart: always
+    ports:
+        - "6379:6379"
+  rabbitmq:
+    container_name: rabbit-mq
+    restart: always
+    ports:
+        - "5672:5672"
+        - "15672:15672"
+    
+  catalog.api:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:80
+      - "CatalogDBSettings:ConnectionString=mongodb://catalog-db:25000"
+    depends_on:
+      - catalog-db
+    ports:
+      - "6000:80"
+    volumes:
+      - ~/.aspnet/https:/root/.aspnet/https:ro
+      - ~/.microsoft/usersecrets:/root/.microsoft/usersecrets:ro
+  basket.api:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:80
+      - "ConnectionStrings:Redis=basket-db:6379"
+      - "EventBus:HostName=rabbitmq"
+    depends_on:
+      - basket-db
+      - rabbitmq
+    ports:
+      - "6002:80"
+    volumes:
+      - ~/.aspnet/https:/root/.aspnet/https:ro
+      - ~/.microsoft/usersecrets:/root/.microsoft/usersecrets:ro
