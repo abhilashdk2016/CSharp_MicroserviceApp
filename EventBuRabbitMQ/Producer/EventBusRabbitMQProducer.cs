@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Text;
-using EventBuRabbitMQ.Events;
+using EventBusRabbitMQ.Events;
 using Newtonsoft.Json;
 using RabbitMQ.Client;
 
-namespace EventBuRabbitMQ.Producer
+namespace EventBusRabbitMQ.Producer
 {
     public class EventBusRabbitMQProducer
     {

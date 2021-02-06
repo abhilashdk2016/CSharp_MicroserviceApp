@@ -1,7 +1,7 @@
 ﻿using System;
 using AutoMapper;
 using Basket.API.Entities;
-using EventBuRabbitMQ.Events;
+using EventBusRabbitMQ.Events;
 
 namespace Basket.API.Mapping
 {

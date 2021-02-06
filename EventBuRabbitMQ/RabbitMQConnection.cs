@@ -3,7 +3,7 @@ using System.Threading;
 using RabbitMQ.Client;
 using RabbitMQ.Client.Exceptions;
 
-namespace EventBuRabbitMQ
+namespace EventBusRabbitMQ
 {
     public class RabbitMQConnection : IRabbitMQConnection
     {

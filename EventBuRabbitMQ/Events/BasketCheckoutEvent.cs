@@ -1,5 +1,5 @@
 ﻿using System;
-namespace EventBuRabbitMQ.Events
+namespace EventBusRabbitMQ.Events
 {
     public class BasketCheckoutEvent
     {

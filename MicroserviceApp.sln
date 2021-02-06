@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.808.6
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroaerviceApp", "MicroaerviceApp\MicroaerviceApp.csproj", "{75CC584E-86F5-4B3B-9180-A766D17C83D6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroserviceApp", "MicroaerviceApp\MicroserviceApp.csproj", "{75CC584E-86F5-4B3B-9180-A766D17C83D6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{37243806-79D3-4538-8F6F-5E78CD255BC9}"
 EndProject
@@ -19,7 +19,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Basket.API", "Basket.API\Ba
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{063D725F-A21A-4423-B90A-92F5FFD7E801}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventBuRabbitMQ", "EventBuRabbitMQ\EventBuRabbitMQ.csproj", "{0F11B936-3C40-4FBE-83D1-1D371B84614E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventBusRabbitMQ", "EventBuRabbitMQ\EventBusRabbitMQ.csproj", "{0F11B936-3C40-4FBE-83D1-1D371B84614E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ordering", "Ordering", "{87CE0693-192F-48C4-9DCD-B1610626606E}"
 EndProject

@@ -4,9 +4,9 @@ using System.Threading.Tasks;
 using AutoMapper;
 using Basket.API.Entities;
 using Basket.API.Repositories.Interfaces;
-using EventBuRabbitMQ.Common;
-using EventBuRabbitMQ.Events;
-using EventBuRabbitMQ.Producer;
+using EventBusRabbitMQ.Common;
+using EventBusRabbitMQ.Events;
+using EventBusRabbitMQ.Producer;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Basket.API.Controllers

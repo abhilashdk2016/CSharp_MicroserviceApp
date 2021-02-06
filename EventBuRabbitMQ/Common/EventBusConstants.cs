@@ -1,5 +1,5 @@
 ﻿using System;
-namespace EventBuRabbitMQ.Common
+namespace EventBusRabbitMQ.Common
 {
     public static class EventBusConstants
     {

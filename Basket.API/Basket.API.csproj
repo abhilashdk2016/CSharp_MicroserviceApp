@@ -19,10 +19,10 @@
   <ItemGroup>
     <PackageReference Include="StackExchange.Redis" Version="2.2.4" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
-    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\EventBuRabbitMQ\EventBuRabbitMQ.csproj">
+    <ProjectReference Include="..\EventBuRabbitMQ\EventBusRabbitMQ.csproj">
       <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
     </ProjectReference>
   </ItemGroup>
